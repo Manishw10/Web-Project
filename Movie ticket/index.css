@@ -1,0 +1,418 @@
+body {
+    background-color: rgb(244, 244, 244);
+    margin: 0px;
+    padding: 0;
+}
+
+label {
+    color: black;
+}
+
+.heading {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    box-shadow: 5px 6px 10px #212020;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+    background-color: rgb(34, 34, 45);
+}
+
+
+.uname {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 150px;
+    left: 500px;
+    transition: left 1s;
+    color: aliceblue;
+    font-size: 20px;
+
+
+}
+
+input {
+    background-color: rgb(223, 222, 222);
+    height: 20px;
+    border:0px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+#name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 30px; */
+    width: 200px;
+
+}
+
+#seat-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+
+
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    color: cadetblue;
+
+}
+
+.seat-dis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 20px;
+    background-color: rgb(223, 222, 222);
+    color: black;
+    /* border: 0.5px solid black; */
+
+}
+
+
+.seat-num-int {
+    width: 100px;
+}
+
+.screen-parent {
+
+    top: 200px;
+    perspective: 1000px;
+    position: relative;
+
+}
+
+
+.screen {
+
+    background-color: #4e92e04e;
+    height: 120px;
+    width: 1000px;
+    margin: 15px 250px;
+    transform: rotateX(-50deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgb(182, 180, 180);
+
+}
+
+.row {
+    position: relative;
+    top: 200px;
+    margin-left: 320px;
+    /* background-color: black; */
+    width: 900px;
+    height: 250px;
+}
+
+
+.screen-text {
+
+    margin: 50px 0px 0px 725px;
+    position: absolute;
+    z-index: 1;
+}
+
+.row1 {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+
+.row1 :nth-child(16) {
+    margin-left: 90px;
+}
+
+.row2 {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+}
+
+.row2 :nth-child(16) {
+    margin-left: 90px;
+    ;
+}
+
+.row3 {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.row3 :nth-child(16) {
+    margin-left: 90px;
+    ;
+}
+
+.row4 {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.row4 :nth-child(16) {
+    margin-left: 90px;
+    ;
+}
+
+.row5 {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.row5 :nth-child(16) {
+    margin-left: 90px;
+    ;
+}
+
+.row6 {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.row6 :nth-child(16) {
+    margin-left: 90px;
+    ;
+}
+
+
+.seat {
+    height: 20px;
+    width: 20px;
+    background-color: #4e4f51;
+
+
+    margin: 3px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    cursor: pointer;
+
+
+}
+
+.cost-parent {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: 200px;
+    padding-left: 10px;
+}
+
+.cost {
+    padding-left: 25px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    width: 50px;
+}
+
+.bookbtn {
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    height: 40px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    /* top:10px; */
+    left: 45%;
+    top: 200px;
+    border: 0px;
+    background-color: rgb(178, 189, 198);
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.popup {
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    left: 500px;
+    position: absolute;
+    top: 300px;
+    border-radius: 10px;
+    visibility: hidden;
+    box-shadow: 1px 3px 10px 5px rgb(170, 163, 163);
+    transform: scale(0.01);
+    transition: transform 0.5s;
+    transition: left 0.5s;
+}
+
+.open-popup {
+    visibility: visible;
+    transform: scale(1);
+
+}
+
+.tick {
+    width: 100px;
+    top: -35px;
+    left: 200px;
+    z-index: 1;
+    position: absolute;
+}
+
+.thanks {
+    margin-top: 50px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dis-uname {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.dis-seat-num {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+.dis-price {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+@media screen and (max-width:400px) {
+    
+    .heading{
+        width: 100%;
+        position: fixed;
+       
+         display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .uname {
+        transition: left 1s;
+        left: 0px;
+        font-size: 14px;
+        display: flex;
+        flex-direction:column;
+        align-content:center;
+        position:relative;
+
+    }
+    .price{
+        width: 200px;
+    }
+    .container{
+        width:100%;
+        height:350px;
+        position:relative;
+        top:150px;
+        
+        overflow-y:scroll;
+        
+        
+    }
+    .row{
+        position:relative;
+        
+        height:210px
+    }
+
+    .screen {
+        
+        transition: margin 1s;
+        width: 1000px;
+        margin-left: 100px;
+        overflow-x: hidden;
+        margin-top:-150px;
+    }
+
+    .row {
+        transition: margin 1s;
+        width: 900px;
+        margin-left: 130px;
+    }
+
+    .screen-text {
+        transition: margin 1s;
+        margin-left: 550px;
+
+    }
+
+    .bookbtn {
+            transition: left 1s;
+      
+        
+       left:30%;
+        position:relative;
+    }
+    .popup {
+        left:10px;
+        width: 450px;
+        transition: left 0.5s;
+    }
+
+
+
+
+
+}
